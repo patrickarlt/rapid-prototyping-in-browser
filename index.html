@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>reveal.js - The HTML Presentation Framework</title>
+    <title>Rapid Prototyping In The Browser | Patrick Arlt</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -47,17 +47,17 @@
         <section data-markdown>
           ## Why Protoype
 
-          *
+          * Sell ideas to shareholders
+          * Document what a project will look and function like
+          * Test concepts and ideas
         </section>
 
         <section data-markdown>
           ## Where Prototypes Fall Short
 
-          *
-        </section>
-
-        <section data-markdown>
-          ## So Prototype In A Browser
+          * Not interactive
+          * Dont represent the styling (ex. Balsamiq)
+          * Missing important parts (ex. button color)
         </section>
 
         <section data-markdown data-state="title">
@@ -65,41 +65,107 @@
         </section>
 
         <section data-markdown>
-          ## Better Then Wireframes
+          ## Better then wireframes
+          * Real interactions
+          * CSS styling
+          * Head start on frontend work
+          * Easier to change your mind
         </section>
 
-        <section>
+        <section data-markdown>
           ## Whiteboard and Sketch
+          Get all your ideas out as fast as possible
+          ![Wireframe](images/wireframe.png)
         </section>
 
-        <section>
+        <section data-markdown>
           ## Build Directly in a Browser
+          Start building in a browser using HTML/CSS/JS
         </section>
 
         <section data-markdown data-state="title">
           ## Resources
         </section>
 
-        <section data-markdown data-state="title">
+        <section data-markdown>
           ## CSS Frameworks
-          * Bootstrap
-          * Foundation
-          * Gumby
+
+          Using a framework **hugely** accelerates the speed at which you can build a prototype
+
+          * [Bootstrap](http://twitter.github.io/bootstrap/)
+          * [Foundation](http://foundation.zurb.com/)
+          * [Gumby](gumbyframework.com)
+        </section>
+
+        <section data-markdown>
+          ### [Foundation](http://foundation.zurb.com/)
+          ![Foundation](images/foundation.png)
+        </section>
+
+        <section data-markdown>
+          ## More Ideas
+
+          * [Yeoman](http://yeoman.io/)
+          * [Angular JS](http://angularjs.org/)
+          * [Markdown](http://daringfireball.net/projects/markdown/)
+          * Static Site Generators, [Middleman](middlemanapp.com), [Jeykll](http://jekyllrb.com/), [DocPad](https://github.com/bevry/docpad)
+        </section>
+
+        <section data-markdown>
+          #### [Yeoman](http://yeoman.io/)
+          ![Yeoman](images/yeoman.png)
         </section>
 
         <section>
-          <h2>More Ides</h2>
-          * Yeoman - <span class="fragment">Build tools, great for setting up development environments</span>
-          * Angular JS - <span class="fragment">Really great prototyping framework, high learning curve</span>
-          * Markdown - <span class="fragment">Write copy in a fast simple format</span>
-          * Static Site Generators - <span class="fragment">Middleman, Jeykll, DocPad</span>
+          <h3><a href="angularjs.org">Angular.js</a></h3>
+          <pre><code>&lt;div ng-controller=&quot;TodoCtrl&quot;&gt;
+  &lt;span&gt;{{remaining()}} of {{todos.length}} remaining&lt;/span&gt;
+  [ &lt;a href=&quot;&quot; ng-click=&quot;archive()&quot;&gt;archive&lt;/a&gt; ]
+  &lt;ul class=&quot;unstyled&quot;&gt;
+    &lt;li ng-repeat=&quot;todo in todos&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; ng-model=&quot;todo.done&quot;&gt;
+      &lt;span class=&quot;done-{{todo.done}}&quot;&gt;{{todo.text}}&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;form ng-submit=&quot;addTodo()&quot;&gt;
+    &lt;input type=&quot;text&quot; ng-model=&quot;todoText&quot;  size=&quot;30&quot;
+           placeholder=&quot;add new todo here&quot;&gt;
+    &lt;input class=&quot;btn-primary&quot; type=&quot;submit&quot; value=&quot;add&quot;&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</code></pre>
         </section>
 
-        <section data-markdown data-state="title">
+        <section>
+          <h3><a href="http://daringfireball.net/projects/markdown/">Markdown</a></h3>
+          <pre><code># This is markdown
+
+            Its pretty dang simple, it even does things like [Links](http://esri.com).
+
+            * It
+            * Also
+            * Does
+            * Lists
+
+            ![and images](http://myimage.png)
+          </code></pre>
+        </section>
+
+        <section data-markdown>
+          ### [Middleman](middlemanapp.com)
+          ![Middleman](images/middleman.png)
+        </section>
+
+        <section data-markdown>
+          ## So...
+
+          1. Whiteboard and Sketch
+          2. Leverage Frameworks
+          3. Prototype in a Browser
+        </section>
+
+        <section data-state="title">
           <h2>Thanks</h2>
-          <p>
-            <small><a href="https://github.com/esri/Terraformer">https://github.com/esri/Terraformer</a> / <a href="http://twitter.com/patrickarlt">@patrickarlt</a></small>
-          </p>
+          <p><small><a href="https://github.com/esri/Terraformer">https://github.com/esri/Terraformer</a> / <a href="http://twitter.com/patrickarlt">@patrickarlt</a></small></p>
         </section>
       </div>
 
